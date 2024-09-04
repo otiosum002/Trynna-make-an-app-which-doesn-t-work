@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>Hello, world!</title>
+    <title>Hello, my good sir! Would you fancy a cup of tea, &hearts;</title>
     <style>
       body{
     background-color: #dbdbdb;
@@ -28,6 +28,9 @@ form{
 }
 #input2{
     border-radius: 25px;
+}
+#language{
+  border-radius: 25px;
 }
 
 input[type=text], select {
@@ -66,6 +69,7 @@ input[type=text], select {
         padding-left: 20px;
 
     }
+    
     body {
         margin: 0 auto;
         max-width: 800px;
@@ -138,6 +142,10 @@ input[type=text], select {
       font-family: 'Poppins', sans-serif;
       height: 20px;
     }
+    #language{
+      font-family: 'Poppins', sans-serif;
+      border-radius: 20px;
+    }
     h5{
       text-align: center;
       font-size: 12px;
@@ -157,6 +165,12 @@ input[type=text], select {
       background-color:  rgb(0, 140, 255);
       color: white;
       border-radius: 2px;
+    }
+    .lang{
+      margin-top: 5px;
+        font-size: 30px;
+        padding-left: 20px;
+        border-radius: 5px;
     }
     </style>
   </head>
@@ -244,7 +258,7 @@ input[type=text], select {
 <g>
 </g>
 </svg>
-          <a class="navbar-brand" href="#">DesphixsChat</a>
+          <a class="navbar-brand" href="#">PolyMessenger</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -285,12 +299,24 @@ input[type=text], select {
             <label id="room_name_top">Room Name</label>
             <textarea id="input1" class="form-control" aria-label="With textarea" type="text" name="room_name" id="room_name" style="margin-top: 10px;"></textarea>
             <label id="username_top">Username</label>
+          
             <textarea id="input2" class="form-control" aria-label="With textarea" type="text" name="username" id="username" style="margin-top: 10px;"></textarea>
+            
+            <label for="language" class="form-control">Language</label>
+            <select required name="language" class="form-control"  name="language"  id="language" style="margin-top: 10px;">
+            <br>
+             <option value="english">English</option>
+             <option value="hindi">Hindi</option>
+             <option value="marathi">Marathi</option>
+             <option value="german">German</option>
+             <option value="polish">Polish</option>
+            </select>
+            <br>
             <input type="submit" value="Start Chat Now!">
         </form>
     </div>
-    <h5 >&copy;	Copyright Reserved Desphixs - 2021</h5>
-<h6>Made by Destiny Franks &hearts;	</h6>
+    <h5 >&copy;	Copyright Reserved Polymessenger - 2023</h5>
+<h6>Made by Polymessenger Team &hearts;	</h6>
 
 
 

@@ -153,7 +153,7 @@ c17.613,0,31.891-14.278,31.891-31.891c0-9.157-3.881-17.389-10.061-23.206L312.572
 <g>
 </g>
 </svg>
-    <a class="navbar-brand" href="#">DesphixsChat</a>
+    <a class="navbar-brand" href="#">PolyMessenger</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -291,13 +291,15 @@ setInterval(function(){
           {% csrf_token %}
           <input type="hidden" name="username" id="username" value="{{username}}"/>
           <input type="hidden" name="room_id" id="room_id" value="{{room_details.id}}"/>
+          <input type="hidden" name="room" id="room" value="{{room}}"/>
+
           <textarea class="form-control" aria-label="With textarea" type="text" name="message" id="message" style="margin-top: 10px;"></textarea>
           <input type="submit" value="Send">
       </form>
   </div>
 </div>
-<h5 >&copy;	Copyright Reserved Desphixs - 2021</h5>
-<h6>Made by Destiny Franks &hearts;	</h6>
+<h5 >&copy;	Copyright Reserved Polymessenger - 2023</h5>
+<h6>Made by Polymessenger Team &hearts;	</h6>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -316,6 +318,7 @@ setInterval(function(){
           username:$('#username').val(),
           room_id:$('#room_id').val(),
           message:$('#message').val(),
+          room:$('#room').val(),
         csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
       },
       success: function(data){
